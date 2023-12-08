@@ -1,0 +1,20 @@
+<h2>Lista de Cursos</h2>
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let curso of cursos">
+            <td>{{curso.name}}</td>
+            <td>{{curso.descripccion}}</td>
+            <td>{{curso.price}}</td>
+            <td>
+                <button (click)= "eliminarCurso(curso.id)" class="btn btn-info">Eliminar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

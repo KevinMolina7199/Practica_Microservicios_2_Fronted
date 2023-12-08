@@ -1,0 +1,17 @@
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center">Registro de Usuario</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Nombre : </label>
+            <input type="text" class="form-control" id="nombre" [(ngModel)]="usuario.nombre" name="nombre">
+            <label>Apellido : </label>
+            <input type="text" class="form-control" id="apellido" [(ngModel)]="usuario.apellido" name="apellido">
+            <label>Correo : </label>
+            <input type="text" class="form-control" id="email" [(ngModel)]="usuario.correo" name="email">
+                  </div>
+        <div>
+            <button class="btn btn-success">Guardar</button>
+
+        </div>
+    </form>
+</div>

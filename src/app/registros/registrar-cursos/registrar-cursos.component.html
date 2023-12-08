@@ -1,0 +1,17 @@
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center">Registro de Cursos</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Nombre : </label>
+            <input type="text" class="form-control" id="name" [(ngModel)]="curso.name" name="name">
+            <label>Descripcion : </label>
+            <input type="text" class="form-control" id="descripccion" [(ngModel)]="curso.descripccion" name="descripccion">
+            <label>Precio : </label>
+            <input type="text" class="form-control" id="price" [(ngModel)]="curso.price" name="price">
+                  </div>
+        <div>
+            <button class="btn btn-success">Guardar</button>
+
+        </div>
+    </form>
+</div>
